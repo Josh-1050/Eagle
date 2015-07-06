@@ -1,0 +1,6 @@
+DISPLAY ALL
+RATSNEST
+DISPLAY None
+DISPLAY Bottom Pads Vias
+EXPORT IMAGE /home/bulek/images/eagle_export.png MONOCHROME 1200;
+DISPLAY Top Unrouted Dimension tPlace bPlace 

@@ -1,0 +1,49 @@
+Partlist
+
+Exported from modulo_potencia_rev_2.brd at 18/07/2012 23:15:03
+
+EAGLE Version 5.8.0 Copyright (c) 1988-2010 CadSoft
+
+Part     Value          Package      Library             Position (inch)       Orientation
+
+C1       10uF 50V       E2,5-7       rcl                 (-4.625 0.85)         R0
+C2       10uF 50V       E2,5-7       rcl                 (-4.7 1.8)            R90
+C4       100nF          C075-032X103 rcl                 (-2.35 1.3)           R180
+C5       1000uF/25V     E5-10,5      rcl                 (-2.3 1.025)          R180
+C6       10nF 200V      C075-032X103 rcl                 (-4.4 1.05)           R90
+D1       1N5817-B       DO41-7.6     diode               (-4.675 1.225)        R90
+D2       1N5817-B       DO41-7.6     diode               (-4.575 1.225)        R270
+IC2      NE555          DIL-08       st-microelectronics (-4.1 0.75)           R270
+JP1      Output         1X03         pinhead             (-3.4 2.475)          R0
+JP2      Input          1X03         pinhead             (-3.15 0.55)          R0
+JP3      Power          1X03         pinhead             (-2.3 0.55)           R180
+JP4                     1X01         pinhead             (-2.4 0.725)          R0
+JP5                     1X01         pinhead             (-2.775 2.225)        R0
+JP6                     1X01         pinhead             (-2.55 0.55)          R0
+JP7                     1X01         pinhead             (-3.575 2.225)        R0
+LED1                    LED5MM       led                 (-2.15 1.85)          R270
+Q1       IRF3205        TO220AH      transistor-power    (-4.3 2.45)           R0
+Q2       IRF3205        TO220AH      transistor-power    (-3.8 2.45)           R0
+Q3       IRF3205        TO220AH      transistor-power    (-2.5 2.45)           R0
+Q4       IRF3205        TO220AH      transistor-power    (-3 2.45)             R0
+Q5       BC557          TO92         transistor-pnp      (-4.4 1.95)           R270
+Q6       BC557          TO92         transistor-pnp      (-2.85 1.7)           R90
+R1       1K             0207/12      rcl                 (-3.55 1.9)           R0
+R2       10K            0207/12      rcl                 (-3.4 1.35)           R90
+R3       10K            0207/12      rcl                 (-3.2 1.95)           R90
+R4       1K             0207/12      rcl                 (-3.75 2.05)          R180
+R5       100R           0207/12      rcl                 (-4.575 2.25)         R270
+R6       10K            0207/12      rcl                 (-4.675 2.25)         R90
+R7       100R           0207/12      rcl                 (-2.7 1.8)            R90
+R8       10K            0207/12      rcl                 (-2.6 1.8)            R270
+R9       10K            0207/12      rcl                 (-3 0.9)              R90
+R10      10K            0207/12      rcl                 (-4.025 1.7)          R270
+R11      10K            0207/10      rcl                 (-3 1.5)              R270
+R12      10K            0207/12      rcl                 (-3.55 1)             R90
+R13      15K            0204V        rcl                 (-3.775 0.7)          R180
+R14      2K2            0204V        rcl                 (-3.825 0.85)         R270
+R15      100K           0207/12      rcl                 (-3.4 0.675)          R270
+R16      100K           0207/12      rcl                 (-2.9 0.9)            R270
+R17      1K             0207/12      rcl                 (-2.375 1.425)        R0
+T1       BC547          TO92         transistor-neu-to92 (-3.15 1.15)          R270
+T2       BC547          TO92         transistor-neu-to92 (-4.2 1.25)           R270

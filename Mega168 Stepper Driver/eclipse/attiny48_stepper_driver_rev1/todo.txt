@@ -1,0 +1,5 @@
+terminali, 
+avcc, ok 
+10k na reset, ok
+obrnt mosfete, ok
+jumper,

@@ -1,0 +1,11 @@
+EAGLE Version 4.16r2 Copyright (c) 1988-2006 CadSoft
+
+Electrical Rule Check for C:/PROGRAM FILES/EAGLE-4.16R2/projects/FolNETIX/CNC/Isel-CNC Modular C10C/Isel_CNC_C10C-PC_Interface/Isel_C101C_Mach2-3/Stepper_Motor_Drive/Lini_Step1/linistep1.sch at  2/13/2008 11:27:54p
+
+WARNING: Sheet 1/1: POWER Pin IC1 VSS connected to GND
+WARNING: Sheet 1/1: POWER Pin IC1 VDD connected to +5V
+
+Board and schematic are consistent
+
+    0 errors
+    2 warnings

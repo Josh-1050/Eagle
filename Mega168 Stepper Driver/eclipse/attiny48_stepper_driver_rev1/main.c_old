@@ -1,0 +1,119 @@
+/*
+ * main.c
+ *
+ *  Created on: 19.3.2009
+ *      Author: Administrator
+ */
+
+#include <avr/io.h>
+#include <avr/interrupt.h>
+#include "bitmacro.h"
+#include <util/delay.h>
+
+#define A 1
+#define A_ 2
+#define B 4
+#define B_ 8
+
+#define STEP1 A
+#define STEP2 B_
+#define STEP3 B
+#define STEP4 A_
+
+
+
+#define STEP_PIN PD0
+#define DIR_PIN PD1
+
+volatile int counter;
+
+unsigned int step_normal[] ={A,B,A_,B_};
+unsigned int step_normal_full[]={A+B_,A+B,A_+B,A_+B_};
+unsigned int step_half[]={A,A+B,B,B+A_,A_,A_+B_,B_,B_+A};
+
+ISR(PCINT0_vect){
+
+
+	if(CHECKBIT(PINB,0)){
+		counter++;
+		if(counter > 3) counter=0;
+	}
+
+
+
+}
+int main() {
+
+	DDRC = 15;
+	DDRB = 0x00;
+	DDRD = 0xff;
+
+
+	while(1){
+
+		for(int a=0;a<360;a++){
+		counter++;
+	    if(counter > 7) counter=0;
+
+		for(int n=0;n<200;n++){
+
+			if(!CHECKBIT(PINB,5)) PORTC = PORTC | (3 & step_half[counter]);
+			else{
+				PORTC = PORTC & 252;
+			}
+
+			if(!CHECKBIT(PINC,5)) PORTC = PORTC | (12 & step_half[counter]);
+			else{
+				PORTC = PORTC & 243;
+			}
+			_delay_us(1);
+		}
+		}
+
+		for(int a=0;a<360;a++){
+
+			counter--;
+			    if(counter <0) counter=7;
+
+				for(int n=0;n<200;n++){
+
+					if(!CHECKBIT(PINB,5)) PORTC = PORTC | (3 & step_half[counter]);
+					else{
+						PORTC = PORTC & 252;
+					}
+
+					if(!CHECKBIT(PINC,5)) PORTC = PORTC | (12 & step_half[counter]);
+					else{
+						PORTC = PORTC & 243;
+					}
+					_delay_us(1);
+				}
+				}
+
+
+	}
+
+
+	//DDRB = 0x00;
+	DDRD = 0xff;
+	DDRC = 0x00;
+	counter = 1;
+	PORTD = 1;
+	//GIMSK |=  (1<<PCINT0);
+	//EICRA |= (1<<ISC11) | (1<<ISC10);
+	//EIMSK |=(1<<INT1);
+
+	PCICR |= (1<<PCIE0);
+	PCMSK0 =0xff;
+
+	sei();
+
+	//while(1);
+	while(1){
+		if(CHECKBIT(PINC,0)) PORTD = 0;
+		else PORTD = step_normal[counter];
+	}
+
+
+}
+
