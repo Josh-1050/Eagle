@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.4.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="12.5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -1583,6 +1583,7 @@ http://www.xganon.com</description>
 <approved hash="113,1,39.3277,134.116,JP2,,,,,"/>
 <approved hash="113,1,39.3277,123.321,JP3,,,,,"/>
 <approved hash="113,1,39.3277,112.526,JP4,,,,,"/>
+<approved hash="113,1,90.1277,122.051,JP5,,,,,"/>
 </errors>
 </schematic>
 </drawing>
